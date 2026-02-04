@@ -1,0 +1,75 @@
+/* CardNav.css */
+.card-nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card-nav {
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-nav-content {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 10px;
+    overflow-x: auto; /* Allow scrolling if items overflow */
+}
+
+.nav-card {
+    border-radius: 16px;
+    padding: 20px;
+    min-width: 200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    min-height: 140px;
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.nav-card-label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.nav-card-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-card-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.8;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s;
+}
+
+.nav-card-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.nav-card-link-icon {
+    font-size: 1rem;
+}
